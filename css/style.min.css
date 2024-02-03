@@ -328,9 +328,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   height: 100%;
-  min-height: 45px;
   padding: 0 0px;
-  min-height: 72px;
   overflow-x: visible;
 }
 .nav-bar__logo {
@@ -415,6 +413,9 @@ header {
   }
 }
 @media (max-width: 700px) {
+  .nav-bar__image {
+    max-height: 33px;
+  }
   .nav-bar__items {
     min-width: 100%;
     min-height: 72px;
@@ -461,6 +462,7 @@ header {
     justify-content: center;
     margin: 0;
     color: white;
+    font-size: 32px;
   }
 }
 .sticky {
@@ -1014,7 +1016,7 @@ body {
 @media (max-width: 579px) {
   .hero__container {
     flex-direction: column;
-    padding: 90px 10px 80px 10px;
+    padding: 58px 10px 80px 10px;
   }
   .hero__title {
     font-size: 32px;
