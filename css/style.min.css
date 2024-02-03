@@ -335,6 +335,7 @@ header {
 }
 .nav-bar__logo {
   padding: 0 5px 0 0px;
+  padding: 10px 0;
   flex: 0 1 50%;
   align-self: center;
   text-align: left;
@@ -402,6 +403,12 @@ header {
   align-self: center;
 }
 
+.nav-bar__item:hover {
+  transform: scale(1.051);
+  transition: all 0.3s ease;
+  text-shadow: -1px 1px #3f86b6;
+}
+
 @media (max-width: 416px) {
   .nav-bar__items {
     font-size: 0;
@@ -442,7 +449,7 @@ header {
   }
   .nav-bar__checkbox:checked ~ .nav-bar__items {
     font-size: 20px;
-    transform: translate(0, 145px);
+    transform: translate(0, 155px);
     opacity: 1;
     transition: opacity, transform 0.3s;
   }
@@ -561,7 +568,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 100%;
-  padding: 80px 10px;
+  padding: 120px 10px;
 }
 .hero__picture {
   padding: 60% 50% 0% 0;
@@ -1007,7 +1014,7 @@ body {
 @media (max-width: 579px) {
   .hero__container {
     flex-direction: column;
-    padding: 8px 10px 80px 10px;
+    padding: 90px 10px 80px 10px;
   }
   .hero__title {
     font-size: 32px;
