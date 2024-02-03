@@ -466,7 +466,7 @@ header {
         flex-direction: row;
         flex-wrap: nowrap;
         position: absolute;
-        top: -72px;
+        top: -87px;
         justify-content: center;
         align-items: center;
         color: #fff;
@@ -489,7 +489,7 @@ header {
 
     .nav-bar__checkbox:checked~.nav-bar__items {
         font-size: 20px;
-        transform: translate(0, 134px);
+        transform: translate(0, 144px);
         opacity: 1;
         transition: opacity, transform .3s
     }
