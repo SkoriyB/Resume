@@ -363,7 +363,7 @@ header {
 }
 
 .nav-bar__image {
-    max-height: 44px;
+    max-height: 62px;
     height: 100%;
     border-radius: 50%
 }
@@ -443,20 +443,19 @@ header {
     text-shadow: -1px 1px #3f86b6
 }
 
-@media (max-width:416px) {
-    .nav-bar__items {
-        font-size: 0
-    }
-}
-
 @media (max-width:700px) {
+    .nav-bar__image {
+        max-height: 42px
+    }
+
     .nav-bar__items {
         min-width: 100%;
-        min-height: 54px
+        min-height: 72px
     }
 
     .nav-bar__item {
-        flex: 1 1 50%
+        flex: 1 1 50%;
+        font-size: 32px
     }
 
     .nav-bar__button {
@@ -467,7 +466,7 @@ header {
         flex-direction: row;
         flex-wrap: nowrap;
         position: absolute;
-        top: -54px;
+        top: -72px;
         justify-content: center;
         align-items: center;
         color: #fff;
@@ -490,7 +489,7 @@ header {
 
     .nav-bar__checkbox:checked~.nav-bar__items {
         font-size: 20px;
-        transform: translate(0, 119px);
+        transform: translate(0, 134px);
         opacity: 1;
         transition: opacity, transform .3s
     }
@@ -503,8 +502,19 @@ header {
         display: flex;
         justify-content: center;
         margin: 0;
-        color: #fff;
-        font-size: 32px
+        color: #fff
+    }
+}
+
+@media (max-width:416px) {
+    .nav-bar__items {
+        font-size: 0
+    }
+}
+
+@media (max-width:400px) {
+    .nav-bar__item {
+        font-size: 28px
     }
 }
 
